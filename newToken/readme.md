@@ -12,3 +12,7 @@ create a metadata.json
 	"description": "Example token tutorial",
 	"image": "https://"
 }
+
+spl-token initialize-metadata mnt7gTPzdrKPrTPb8BgPA3Bra1mvjNkDC45P6x1T4w9 'Example' 'EXMPL' https://raw.githubusercontent.com/NIXBLACK11/web3/refs/heads/main/newToken/metadata.json
+spl-token create-account mnt7gTPzdrKPrTPb8BgPA3Bra1mvjNkDC45P6x1T4w9
+spl-token mint mnt7gTPzdrKPrTPb8BgPA3Bra1mvjNkDC45P6x1T4w9 1000

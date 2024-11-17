@@ -1,8 +1,8 @@
-import { createNft, fetchDigitalAsset, mplTokenMetadata } from "@metaplex-foundation/mpl-token-metadata";
+import { findMetadataPda, mplTokenMetadata, verifyCollectionV1 } from "@metaplex-foundation/mpl-token-metadata";
 import { airdropIfRequired, getExplorerLink, getKeypairFromFile } from "@solana-developers/helpers";
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import { clusterApiUrl, Connection, LAMPORTS_PER_SOL } from "@solana/web3.js";
-import { generateSigner, keypairIdentity, percentAmount, publicKey } from "@metaplex-foundation/umi";
+import { keypairIdentity, publicKey } from "@metaplex-foundation/umi";
 
 const connection = new Connection(clusterApiUrl("devnet"));
 
@@ -22,23 +22,14 @@ console.log("Set to Umi instance for user");
 
 const collectionAddress = publicKey("FECQnpMisT7efTuqxUPFscYwLigkwXfdAtfz1qv3q2bD");
 
-console.log(`Creating NFT...`);
+const nftAddress = publicKey("DhwCsTDnhRfGKLU8uPVG9gbsfSAAvF9CN3wFu3rGua1e");
 
-const mint = generateSigner(umi);
-
-const transcation = await createNft(umi, {
-    mint,
-    name: "My First NFT",
-    uri: "https://raw.githubusercontent.com/NIXBLACK11/web3/refs/heads/main/makeNFT/nft-metadata.json",
-    sellerFeeBasisPoints: percentAmount(0),
-    collection: {
-        key: collectionAddress,
-        verified: false,
-    },
+const transaction = await verifyCollectionV1(umi, {
+    metadata: findMetadataPda(umi, { mint: nftAddress }),
+    collectionMint: collectionAddress,
+    authority: umi.identity
 });
 
-await transcation.sendAndConfirm(umi);
+transaction.sendAndConfirm(umi);
 
-const createdNft = await fetchDigitalAsset(umi, mint.publicKey);
-
-console.log(`Created NFT! Address is ${getExplorerLink("address", createdNft.mint.publicKey, "devnet")}`);
+console.log(`NFT ${nftAddress} verified as member of collection ${collectionAddress}! See Explorer at ${getExplorerLink("address", nftAddress, "devnet")}`);
