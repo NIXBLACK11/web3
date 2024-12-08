@@ -258,7 +258,7 @@ WaitLog: Current trasfer state:  DestinationFinalized
 }
 ```
 
-# Solana to Avalanche
+# Avalanche to Solana
 
 ## Wormhole scan link
 [Wormhole](https://wormholescan.io/#/tx/oQvxJUKoYzLsFnnjod9zsvFCnCUNQuqkoQzVTpYpXAWYGpDS51GLKAK4tWLXwPYV2jvgA5inNziK5ma1MG2dk9b?network=Testnet&view=overview)
