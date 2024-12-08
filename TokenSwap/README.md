@@ -9,7 +9,7 @@ https://wormholescan.io/#/tx/<ID>?network=Testnet&view=overview
 
 ## Raw data
 
-```json
+```
 {
   sourceToken: {
     token: { chain: 'Solana', address: [SolanaAddress] },
@@ -255,7 +255,8 @@ WaitLog: Current trasfer state:  DestinationFinalized
       txid: '0x8441920401d38b034e8cc1e6dac14b4d52dde84f0de18cf7252ced9500a2ca06'
     }
   ]
-}```
+}
+```
 
 # Solana to Avalanche
 
@@ -263,7 +264,8 @@ WaitLog: Current trasfer state:  DestinationFinalized
 [Wormhole](https://wormholescan.io/#/tx/oQvxJUKoYzLsFnnjod9zsvFCnCUNQuqkoQzVTpYpXAWYGpDS51GLKAK4tWLXwPYV2jvgA5inNziK5ma1MG2dk9b?network=Testnet&view=overview)
 
 ## Raw data
-```json
+
+```
 {
   sourceToken: {
     token: { chain: 'Avalanche', address: [EvmAddress] },
@@ -614,4 +616,5 @@ WaitLog: Current trasfer state:  DestinationFinalized
       txid: 'oQvxJUKoYzLsFnnjod9zsvFCnCUNQuqkoQzVTpYpXAWYGpDS51GLKAK4tWLXwPYV2jvgA5inNziK5ma1MG2dk9b'
     }
   ]
-}```
+}
+```
