@@ -1,40 +1,28 @@
-import type { Chain, Network, TokenId, WormholeConfigOverrides } from "@wormhole-foundation/sdk";
-import { TokenTransfer, Wormhole, amount, isTokenId, rpc, wormhole } from "@wormhole-foundation/sdk";
+import type { Chain, Network, TokenId } from "@wormhole-foundation/sdk";
+import { TokenTransfer, Wormhole, amount, isTokenId, wormhole } from "@wormhole-foundation/sdk";
 
 // Import the platform-specific packages
 
 import evm from "@wormhole-foundation/sdk/evm";
 import solana from "@wormhole-foundation/sdk/solana";
-
-import { getSigner, SignerStuff, waitLog } from "./helpers/index";
+import { getSigner, waitLog, type SignerStuff } from "./helpers/index";
 
 (async function () {
   // Init Wormhole object, passing config for which network
   // to use (e.g. Mainnet/Testnet) and what Platforms to support
-
-  const customConfig: WormholeConfigOverrides<'Testnet'> = {
-    chains: {
-      // Solana: {
-      //   rpc: 'https://api.devnet.solana.com',
-      // },
-      // Avalanche: {
-      //   rpc: '`https://avalanche-fuji-c-chain-rpc.publicnode.com',
-      // },
-      // Ethereum: {
-      //   rpc: 'https://eth-sepolia.g.alchemy.com/v2/_NXF9aO5D1OTBy5uQj9H6FslWzSsa677'
-      // }
-    },
-  };
-
-  const wh = await wormhole("Testnet", [evm, solana], customConfig);
+  const wh = await wormhole("Testnet", [evm, solana]);
 
   // Grab chain Contexts -- these hold a reference to a cached rpc client
-  const sendChain = wh.getChain("Solana");
-  const rcvChain = wh.getChain("Ethereum");
-  // console.log(rcvChain.chain);
+  const sendChain = wh.getChain("Avalanche");
+  const rcvChain = wh.getChain("Solana");
 
-  // Shortcut to allow transferring native gas token
-  const token = Wormhole.tokenId(sendChain.chain, "native");
+  //  Shortcut to allow transferring native gas token
+  // Contract address
+  // const token = Wormhole.tokenId(sendChain.chain, "native");
+  // Solana -> GQtMXZxnuacCFTXVeTvyHi6P9F6chbtzhVc8JgD8hv7c (USDC)
+  // Avalanche -> 0x5425890298aed601595a70AB815c96711a31Bc65 (USDC)
+  // Solana -> 3Ftc5hTz9sG4huk79onufGiebJNDMZNL8HYgdMJ9E7JR (Wrapped Avax)
+  const token = Wormhole.tokenId(sendChain.chain, "0x5425890298aed601595a70AB815c96711a31Bc65");
 
   // A TokenId is just a `{chain, address}` pair and an alias for ChainAddress
   // The `address` field must be a parsed address.
