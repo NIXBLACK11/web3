@@ -1,0 +1,157 @@
+Initializing Wormhole instance...
+Setting up Solana chain...
+Solana Signer Address: 6264vVvtWg8CqBRegBt83ttcPPK61LurXNs7cqF56Gf5
+Setting up Avalanche chain...
+Avalanche Signer Address: 0x8ffcF7E7109416F2c34b6e226556a58Fa68BD779
+Retrieving core messaging bridge for Solana...
+Preparing the message...
+Signing and sending the message from Solana...
+Signing: Core.PublishMessage for 6264vVvtWg8CqBRegBt83ttcPPK61LurXNs7cqF56Gf5
+[]
+PublicKey [PublicKey(6264vVvtWg8CqBRegBt83ttcPPK61LurXNs7cqF56Gf5)] {
+  _bn: <BN: 4a91bed434313d311d795434a998f11cb74c19e28e578768479afa19953add04>
+}
+Program 11111111111111111111111111111111
+Data:  020000000a00000000000000
+Keys:  [
+  [
+    {
+      pubkey: [PublicKey [PublicKey(6264vVvtWg8CqBRegBt83ttcPPK61LurXNs7cqF56Gf5)]],
+      isSigner: true,
+      isWritable: true
+    },
+    '6264vVvtWg8CqBRegBt83ttcPPK61LurXNs7cqF56Gf5'
+  ],
+  [
+    {
+      pubkey: [PublicKey [PublicKey(7s3a1ycs16d6SNDumaRtjcoyMaTDZPavzgsmS3uUZYWX)]],
+      isSigner: false,
+      isWritable: true
+    },
+    '7s3a1ycs16d6SNDumaRtjcoyMaTDZPavzgsmS3uUZYWX'
+  ]
+]
+Program 3u8hJUVTA4jH1wYAyUur7FFZVQ8H635K3tSHHF4ssjQ5
+Data:  012a0000001f00000048656c6c6f2066726f6d20536f6c616e6120746f204176616c616e6368652100
+Keys:  [
+  [
+    {
+      pubkey: [PublicKey [PublicKey(6bi4JGDoRwUs9TYBuvoA7dUVyikTJDrJsJU1ew6KVLiu)]],
+      isWritable: true,
+      isSigner: false
+    },
+    '6bi4JGDoRwUs9TYBuvoA7dUVyikTJDrJsJU1ew6KVLiu'
+  ],
+  [
+    {
+      pubkey: [PublicKey [PublicKey(9HGQHBA2BZZzjCwFLhHNy1EYNCBwpyNW4dScYDAGrYju)]],
+      isWritable: true,
+      isSigner: true
+    },
+    '9HGQHBA2BZZzjCwFLhHNy1EYNCBwpyNW4dScYDAGrYju'
+  ],
+  [
+    {
+      pubkey: [PublicKey [PublicKey(6264vVvtWg8CqBRegBt83ttcPPK61LurXNs7cqF56Gf5)]],
+      isWritable: false,
+      isSigner: true
+    },
+    '6264vVvtWg8CqBRegBt83ttcPPK61LurXNs7cqF56Gf5'
+  ],
+  [
+    {
+      pubkey: [PublicKey [PublicKey(95pC9stBqjPd6rxUYz4tUzJFSSUVgcqE6tsScCKpDVs8)]],
+      isWritable: true,
+      isSigner: false
+    },
+    '95pC9stBqjPd6rxUYz4tUzJFSSUVgcqE6tsScCKpDVs8'
+  ],
+  [
+    {
+      pubkey: [PublicKey [PublicKey(6264vVvtWg8CqBRegBt83ttcPPK61LurXNs7cqF56Gf5)]],
+      isWritable: true,
+      isSigner: true
+    },
+    '6264vVvtWg8CqBRegBt83ttcPPK61LurXNs7cqF56Gf5'
+  ],
+  [
+    {
+      pubkey: [PublicKey [PublicKey(7s3a1ycs16d6SNDumaRtjcoyMaTDZPavzgsmS3uUZYWX)]],
+      isWritable: true,
+      isSigner: false
+    },
+    '7s3a1ycs16d6SNDumaRtjcoyMaTDZPavzgsmS3uUZYWX'
+  ],
+  [
+    {
+      pubkey: [PublicKey [PublicKey(SysvarC1ock11111111111111111111111111111111)]],
+      isWritable: false,
+      isSigner: false
+    },
+    'SysvarC1ock11111111111111111111111111111111'
+  ],
+  [
+    {
+      pubkey: [PublicKey [PublicKey(SysvarRent111111111111111111111111111111111)]],
+      isWritable: false,
+      isSigner: false
+    },
+    'SysvarRent111111111111111111111111111111111'
+  ],
+  [
+    {
+      pubkey: [PublicKey [PublicKey(11111111111111111111111111111111)]],
+      isWritable: false,
+      isSigner: false
+    },
+    '11111111111111111111111111111111'
+  ]
+]
+Submitting transactions 
+Waiting for confirmation for:  [
+  '4sycF93QcNB6HGN6f22oyxQYMKkv9AMcnQ81mnHUDtJm1q9SzeqpArR9hBZXE57E2Pix8vAnmpw4PRPjAFgMm6DM'
+]
+Transaction IDs from Solana: 4sycF93QcNB6HGN6f22oyxQYMKkv9AMcnQ81mnHUDtJm1q9SzeqpArR9hBZXE57E2Pix8vAnmpw4PRPjAFgMm6DM
+Link for solana explorer: https://explorer.solana.com/tx/4sycF93QcNB6HGN6f22oyxQYMKkv9AMcnQ81mnHUDtJm1q9SzeqpArR9hBZXE57E2Pix8vAnmpw4PRPjAFgMm6DM?cluster=devnet
+Last Solana Transaction ID: 4sycF93QcNB6HGN6f22oyxQYMKkv9AMcnQ81mnHUDtJm1q9SzeqpArR9hBZXE57E2Pix8vAnmpw4PRPjAFgMm6DM
+Parsing the transaction to retrieve the Wormhole Message ID...
+Wormhole Message ID: [object Object]
+Waiting for the VAA to be signed...
+Received VAA:
+{
+  protocolName: null,
+  payloadName: 'Uint8Array',
+  payloadLiteral: 'Uint8Array',
+  guardianSet: 0,
+  signatures: [ { guardianIndex: 0, signature: [Signature] } ],
+  timestamp: 1734889167,
+  nonce: 42,
+  emitterChain: 'Solana',
+  emitterAddress: UniversalAddress {
+    address: Uint8Array(32) [
+       74, 145, 190, 212,  52,  49,  61,  49,
+       29, 121,  84,  52, 169, 152, 241,  28,
+      183,  76,  25, 226, 142,  87, 135, 104,
+       71, 154, 250,  25, 149,  58, 221,   4
+    ]
+  },
+  sequence: 2n,
+  consistencyLevel: 1,
+  payload: Uint8Array(31) [
+     72, 101, 108, 108, 111,  32, 102, 114,
+    111, 109,  32,  83, 111, 108,  97, 110,
+     97,  32, 116, 111,  32,  65, 118,  97,
+    108,  97, 110,  99, 104, 101,  33
+  ],
+  hash: Uint8Array(32) [
+    102,   1,  98, 234,  82, 232, 112,  44,
+      2, 158, 182,  25,  56, 132,  65,  31,
+     67,   5, 232, 207,  62,  67,  31, 177,
+    192, 254, 117, 241, 118, 163,  31,  72
+  ]
+}
+Submitting the VAA to Avalanche...
+Signing: WormholeCore.verifyMessage for 0x8ffcF7E7109416F2c34b6e226556a58Fa68BD779
+Transaction IDs from Avalanche: 0x6abb9df3d4e6bfba4f7d4d157fc1141d51caa2d5b1a5e727548e6b07809a6d9d
+Search at avalanche: https://testnet.avascan.info/blockchain/c/tx/0x6abb9df3d4e6bfba4f7d4d157fc1141d51caa2d5b1a5e727548e6b07809a6d9d
+Message successfully sent from Solana to Avalanche and verified on Avalanche!
